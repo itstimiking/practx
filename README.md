@@ -13,3 +13,5 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can also just visit [this link](http://practx.timiapps.tk) to see the live app
