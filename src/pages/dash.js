@@ -1,12 +1,11 @@
 import Layout from '../Layout';
-import styles from './dash.module.scss';
-
 import cn from 'classnames';
 
 import {Container, Row, Col, Nav, Image} from 'react-bootstrap';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import Sidebar  from '../components/Sidebar';
+import Chathead  from '../components/Chathead';
 
 
 
@@ -15,20 +14,33 @@ export default function Dash() {
 
     <Layout>
 
-        <Container fluid>
+        <Row>
 
-            <Row>
-                
-                <Col sm={3}>
+          <Sidebar />
+          
 
-                  The dash page
-                             
-                </Col>
-                <Col sm={6}> The dash page </Col>
-                <Col sm={2}> </Col>
-            </Row>  
+          <Col sm={11}>
+            <Container fluid>
 
-        </Container>
+              <Row>
+    
+                  <Col sm={3}>
+
+                    <Chathead />
+                    <Chathead />
+                    <Chathead />
+                 
+                  </Col>
+                  <Col sm={6}> The dash page </Col>
+                  <Col sm={3}> More Cols </Col>
+
+              </Row> 
+
+            </Container>
+
+          </Col>
+        </Row>
+
     </Layout>
 
   )
