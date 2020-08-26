@@ -31,9 +31,9 @@ const Chathead = (props) => (
                   </Row>
 
                   <Row>
-                  <Alert variant="success">
+                        <p>
                           profile update or any message that should be displayed
-                      </Alert>
+                      </p>
                   </Row>
 
                </Col>

@@ -1,4 +1,4 @@
-import {Container, Row, Col, Nav, Image} from 'react-bootstrap';
+import {Container, Row, Col, Nav, Image, Alert} from 'react-bootstrap';
 import cn from "classname";
 
 import styles from './chatblob.module.scss';
@@ -21,9 +21,9 @@ const Chatblob = (props) => (
                   </Row>
 
                   <Row>
-                      <p>
+                      <Alert variant="success">
                           profile update or any message that should be displayed
-                      </p>
+                      </Alert>
                   </Row>
 
                </Col>
