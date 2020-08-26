@@ -6,6 +6,7 @@ import {Container, Row, Col, Nav, Image} from 'react-bootstrap';
 
 import Sidebar  from '../components/Sidebar';
 import Chathead  from '../components/Chathead';
+import Chatblob from '../components/Chatblob';
 
 
 
@@ -29,9 +30,19 @@ export default function Dash() {
                     <Chathead />
                     <Chathead />
                     <Chathead />
+                    <Chathead selected="yes"/>
+                    <Chathead />
+                    <Chathead />
+                    <Chathead />
                  
                   </Col>
-                  <Col sm={6}> The dash page </Col>
+
+                  <Col sm={6}>
+                    <Chatblob />
+                    <Chatblob />
+                    <Chatblob />
+                  </Col>
+
                   <Col sm={3}> More Cols </Col>
 
               </Row> 

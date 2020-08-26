@@ -1,10 +1,11 @@
-import {Container, Row, Col, Nav, Image} from 'react-bootstrap';
+import {Container, Row, Col, Nav, Image, Alert} from 'react-bootstrap';
+import cn from "classname";
 
 import styles from './chathead.module.scss';
 
 
 const Chathead = (props) => (
-  <div className={styles.profilebox}>
+  <div className={props.selected === "yes"? styles.profileboxselected: styles.profilebox}>
     <Row className={styles.rowheight}>
        <Col xm={12}>
            <Row >
@@ -30,9 +31,9 @@ const Chathead = (props) => (
                   </Row>
 
                   <Row>
-                      <p>
+                  <Alert variant="success">
                           profile update or any message that should be displayed
-                      </p>
+                      </Alert>
                   </Row>
 
                </Col>
