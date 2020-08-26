@@ -22,7 +22,7 @@ const Chatblob = (props) => (
 
                   <Row>
                       <Alert variant="success">
-                          profile update or any message that should be displayed
+                         Chart message that could be very long and very all that ja
                       </Alert>
                   </Row>
 
@@ -30,7 +30,6 @@ const Chatblob = (props) => (
 
                <Col sm={2} className={styles.toptime} >
 
-                    <span>13:00</span>
                     <Image src="/images/timicircle.jpg" roundedCircle/>
 
                </Col>
